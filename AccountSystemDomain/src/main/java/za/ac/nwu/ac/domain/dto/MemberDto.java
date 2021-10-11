@@ -1,5 +1,7 @@
 package za.ac.nwu.ac.domain.dto;
 
+import za.ac.nwu.ac.domain.persistence.Member;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -17,6 +19,10 @@ public class MemberDto implements Serializable {
         Member_Name = member_name;
         Member_Email = member_email;
         Member_StartDate = member_startDate;
+    }
+
+    public MemberDto(Member member) {
+
     }
 
 

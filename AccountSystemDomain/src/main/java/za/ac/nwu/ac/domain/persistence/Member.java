@@ -23,6 +23,7 @@ public class Member implements Serializable{
     private String Member_Email;
 
     private LocalDate Member_StartDate;
+    private Set<Account> account;
 
     public Member(int member_ID, String member_Name, String member_Email, LocalDate member_StartDate) {
         this.Member_ID = member_ID;
@@ -71,13 +72,13 @@ public class Member implements Serializable{
         return account;
     }
 
-    public void setAccount(Set<Account> account){
+    public void setAccount(Set<Account> account) {
         this.account = account;
-
+    }
     public void setMember_StartDate(LocalDate Member_StartDate){
         this.Member_StartDate = Member_StartDate;
     }
 
 
     }
-}
+
